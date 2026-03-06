@@ -440,8 +440,17 @@ body {
     z-index: 10001;
     transition: opacity 0.8s ease, visibility 0.8s ease;
 }
+.nav-item:last-child {
+    animation: pulse-green 2s infinite;
+}
 
+@keyframes pulse-green {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
 #splash-screen.fade-out {
     opacity: 0;
     visibility: hidden;
 }
+
